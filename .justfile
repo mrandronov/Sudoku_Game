@@ -4,7 +4,7 @@ build:
         cd build && cmake .. && make
 
 exec:
-        ./build/GUITest
+        ./build/SudokuApp
 
 clean:
         @rm -rf build

@@ -2,7 +2,7 @@
 cmake_minimum_required( VERSION 3.9 )
 set (CMAKE_CXX_STANDARD 20)
 
-project( GUITest VERSION 1.0.0 DESCRIPTION "Sudoku App" )
+project( SudokuApp VERSION 1.0.0 DESCRIPTION "Sudoku App" )
 
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/src/ )
 
@@ -44,10 +44,10 @@ set( HEADERS
         ./src/State.h
 )
 
-add_executable( GUITest ${SOURCES} ${HEADERS} )
+add_executable( SudokuApp ${SOURCES} ${HEADERS} )
 
 find_package( SDL2 REQUIRED )
-target_link_libraries( GUITest SDL2::SDL2 SDL2::SDL2main )
+target_link_libraries( SudokuApp SDL2::SDL2 SDL2::SDL2main )
 
 find_package( SDL2_ttf REQUIRED )
-target_link_libraries( GUITest SDL2_ttf::SDL2_ttf )
+target_link_libraries( SudokuApp SDL2_ttf::SDL2_ttf )
