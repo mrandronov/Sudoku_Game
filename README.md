@@ -4,6 +4,7 @@
 - [Building](#building)
 - [Execution](#execution)
 - [Todo](#todo)
+- [Images](#images)
 
 This project implements an Sudoku puzzle application in C++ using SDL. The game is a simple point in click, there are no points or rewards other than a 'Puzzle Solved!' message when you have completed a puzzle. I've included 99 sudoku puzzles I found off of kaggle. I have a csv when about 100,000 I believe however I figured 99 is good enough.
 
@@ -40,3 +41,11 @@ The current state of the game is quite playable, however in the ( near ) future,
 - [ ] Better cell highlighting
 - [ ] Be able to switch puzzles without restarting the application ( The 'new game' button has been tough to iron out ).
 - [ ] This whole project probably needs better error handling.
+
+## Images
+
+This is what the app looks like:
+
+![ First Empty puzzle ]( pics/pic1-empty.png )
+![ Second Empty puzzle ]( pics/pic2-empty.png )
+![ Third Empty puzzle ]( pics/pic3-highlights.png )
