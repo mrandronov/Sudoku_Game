@@ -7,7 +7,6 @@
 #include "State.h"
 
 SudokuGame* sudokuGame;
-
 State::State()
 {
         window = new Window();
@@ -25,7 +24,7 @@ State::~State()
 void
 State::initialize()
 {
-        // Slapping random puzzle selector on startup.
+        // Slapping a random puzzle selector on startup.
         srand( time( NULL ) );
         int puzzleNum = rand() % 99 + 1;
         string new_puzzle_path = "./SudokuPuzzles/puzzle" + to_string( puzzleNum ) + ".sp";
