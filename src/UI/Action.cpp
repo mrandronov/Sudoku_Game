@@ -3,7 +3,6 @@
 
 #include "Action.h"
 #include "Component/Board.h"
-#include "../State.h"
 
 using namespace std;
 

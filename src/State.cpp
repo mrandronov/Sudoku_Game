@@ -29,6 +29,7 @@ State::initialize()
         srand( time( NULL ) );
         int puzzleNum = rand() % 99 + 1;
         string new_puzzle_path = "./SudokuPuzzles/puzzle" + to_string( puzzleNum ) + ".sp";
+
         sudokuGame = new SudokuGame( new_puzzle_path );
         ui = new UI();
 }

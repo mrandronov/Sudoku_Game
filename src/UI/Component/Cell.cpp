@@ -5,7 +5,6 @@
 
 #include "Cell.h"
 #include "Board.h"
-#include "../../State.h"
 
 Cell::Cell( int x, int y, int i, int j, int val, bool isEnabled )
 {

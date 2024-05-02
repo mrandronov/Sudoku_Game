@@ -1,6 +1,5 @@
 
 #include "Board.h"
-#include "../../State.h"
 
 Board::Board()
 {
@@ -15,7 +14,7 @@ void
 Board::addCell( int x, int y, int r, int c )
 {
         int val = sudokuGame->getCellValue( r, c );
-        
+        bool isEnabled = ( val == 0 ) ? true : false;
         Cell* cell = new Cell( x, y, r, c, val, isEnabled );
 
         cells[ r ].push_back( cell );

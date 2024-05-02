@@ -4,7 +4,6 @@
 #include "SDL2/SDL.h"
 
 #include "Label.h"
-#include "../../State.h"
 
 using namespace std;
 

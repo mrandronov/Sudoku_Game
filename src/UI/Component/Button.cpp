@@ -6,7 +6,6 @@
 #include "Button.h"
 #include "Label.h"
 #include "Board.h"
-#include "../../State.h"
 
 using namespace std;
 

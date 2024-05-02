@@ -7,10 +7,8 @@
 #include "UI.h"
 #include "Component/Label.h"
 #include "Component/Button.h"
-#include "Component/Cell.h"
 #include "Component/Board.h"
 #include "Component/SelectorPanel.h"
-#include "../State.h"
 
 UIEventPublisher< pair< int, int > >*           mouseHoverPublisher;
 UIEventPublisher< SDL_Event >*                  mouseClickPublisher;
