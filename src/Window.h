@@ -12,17 +12,17 @@ using namespace std;
 class Window
 {
         protected:
-                string                  TITLE = "Sudoku App";
-                int                     SCREEN_WIDTH = 1200;
-                int                     SCREEN_HEIGHT = 700;
+                string                  TITLE           = "Sudoku App";
+                int                     SCREEN_WIDTH    = 1200;
+                int                     SCREEN_HEIGHT   = 700;
                 
-                float                   fps_cap = 60.0f;
-                float                   fps_cap_in_ms = 1000.0f / fps_cap;
+                float                   fps_cap         = 60.0f;
+                float                   fps_cap_in_ms   = 1000.0f / fps_cap;
                 uint64_t                start_time;
                 uint64_t                end_time;
                 float                   delta;
 
-                bool                    isAppRunning = true;
+                bool                    isAppRunning    = true;
 
                 SDL_Window*             window;
                 SDL_Renderer*           renderer;

@@ -4,19 +4,19 @@
 class Action
 {
         public:
-                virtual int action() = 0;
+                virtual int     action() = 0;
 };
 
 class NewGameAction : public Action
 {
         public:
-                virtual int action() override;
+                virtual int     action() override;
 };
 
 class QuitGameAction : public Action
 {
         public:
-                virtual int action() override;
+                virtual int     action() override;
 };
 
 class NumberSelectAction : public Action

@@ -17,6 +17,7 @@ class Cell : public Component
         public:
                 int             val;
                 bool            isHighlighted;
+                bool            isCorrect;
 
                 Cell( int x, int y, int w, int h, int val, bool isEnabled );
                 ~Cell();

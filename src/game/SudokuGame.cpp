@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -77,6 +76,12 @@ SudokuGame::undoCellMove()
         moves.pop_back();
 
         return top;
+}
+
+bool
+SudokuGame::isCellValueCorrect( int r, int c, int val )
+{
+        return solution[ r ][ c ] == val;
 }
 
 bool

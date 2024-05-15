@@ -13,15 +13,15 @@ class Component {
                 bool                    isEnabled = true;
 
                 Component();
-                virtual ~Component();
+                virtual                 ~Component();
 
-                bool            isMouseOver( int mouse_x, int mouse_y );
-                bool            isMouseOver();
-                void            onHover();
+                bool                    isMouseOver( int mouse_x, int mouse_y );
+                bool                    isMouseOver();
+                void                    onHover();
 
-                virtual void    render()        = 0;
-                virtual void    onClick()       = 0;
-                virtual void    clickUpdate()   = 0;
+                virtual void            render()        = 0;
+                virtual void            onClick()       = 0;
+                virtual void            clickUpdate()   = 0;
 };
 
 #endif /* __LIB_COMPONENT_H__ */

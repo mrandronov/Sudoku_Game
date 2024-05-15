@@ -12,17 +12,17 @@ using namespace std;
 
 class SelectorPanel : public Component
 {
-        vector< Selector* >                     selectors;
+        vector< Selector* >             selectors;
 
         public:
                 SelectorPanel();
 
-                void            addSelector( int x, int y, int i );
-                void            disableAll();
+                void                    addSelector( int x, int y, int i );
+                void                    disableAll();
 
-                virtual void    render()        override;
-                virtual void    onClick()       override;
-                virtual void    clickUpdate()   override;
+                virtual void            render()        override;
+                virtual void            onClick()       override;
+                virtual void            clickUpdate()   override;
 
 };
 

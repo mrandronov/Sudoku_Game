@@ -26,6 +26,7 @@ class SudokuGame
                 int                     getCellValue( int r, int c );
                 void                    addCellMove( int r, int c, int val, int prevVal );
                 vector< int >           undoCellMove();
+                bool                    isCellValueCorrect( int r, int c, int val );
                 bool                    isComplete();
                 void                    reset( string puzzle_path );
 };

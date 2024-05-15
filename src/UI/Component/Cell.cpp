@@ -34,6 +34,10 @@ Cell::render()
         {
                 state->theme->setColor( renderer, "select_color" );
         }
+        else if ( this->isCorrect == false )
+        {
+                state->theme->setColor( renderer, "orange" );
+        }
         else if ( this->isHover == true || this->isHighlighted == true )
         {
                 state->theme->setColor( renderer, "highlight_color" );
@@ -56,6 +60,9 @@ Cell::update( int val )
         }
 
         this->val = val;
+
+        isCorrect = ( val == 0 ) ? true : sudokuGame->isCellValueCorrect( this->row, this->col, val );
+        
         string text = ( val == 0 ) ? " " : to_string( val );
 
         // A label ultimately is a precomputed texture
@@ -68,6 +75,7 @@ Cell::update( int val )
 
         label = new Label( this->box->x, this->box->y, text, 32, "white" );
         label->center( CELL_SIZE, CELL_SIZE );
+
 }
 
 void
